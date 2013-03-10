@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="" roles="*">
+      <siteMapNode url="~/Default.aspx" title="Home"  description="Home Page for all Users" roles="*"/>
+      <siteMapNode url="http://www.ward-iv.com/LabAssist/" title="Lab Assist"  description="Link to LabAssist" roles="*"/>
+           
+      <siteMapNode url="" title="Review"  description="Review" roles="*" >
+        <siteMapNode url="~/Review/ClassExample.aspx" title="Class Example"  description=" Class Example " roles="*" />
+        <siteMapNode url="~/Review/ClassPartsQuiz.aspx" title="Class Parts Quiz"  description=" Class Parts Quiz" roles="*" />
+        <siteMapNode url="~/Review/ClassPartsTutorial.aspx" title="Class Parts Tutorial"  description=" Class Parts Quiz" roles="*" />
+      </siteMapNode> 
+      <siteMapNode url="~/About.aspx" title="About"  description="About Page for all Users" roles="*" />
+      <siteMapNode url="~/Contact Us.aspx" title="Contact Us"  description="Contact Information" roles="*" />
+    </siteMapNode>
+  
+  
+  
+</siteMap>

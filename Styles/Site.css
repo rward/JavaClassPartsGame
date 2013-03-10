@@ -1,0 +1,850 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+.printback
+{
+     -webkit-print-color-adjust:exact;
+}
+
+
+.body2   
+{
+    -webkit-print-color-adjust:exact;
+    background-color:White ;
+    margin : 5px;
+    padding: 0px;
+    width:750px;
+   
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	background: #006600;
+	width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+	background-color: #000000;
+	width: 100%;
+}
+
+
+div.menu
+{
+    padding: 0px 0px 0px 0px;
+    width:100%;
+   
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+	background-color: #006600;
+	border: 1px #4e667d solid;
+	color: #FFFFFF;
+	display: block;
+	line-height: 1.35em;
+	padding:   5px 24px 5px 24px;
+	text-decoration: none;
+	white-space: nowrap;
+	font-size:  x-large;
+	z-index:9999;
+	
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+/* Quiz Input TextBoxes
+----------------------------------------------------------*/
+.answertextbox
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-style:normal;
+    font-size:large;
+    height:20px;
+    width:300px;
+    font-weight:bold;
+    border-top: solid 1px silver;
+    border-left: solid 1px silver;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+}
+.answertextbox:focus, answertextbox.input_text_focus
+{
+       border-color:#646464;
+       background-color:#ffffc0;
+}
+.questiontextbox
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 9px;
+    font-style:normal;
+    font-size:large;
+    height:125px;
+    width:500px;
+    border-top: solid 1px silver;
+    border-left: solid 1px silver;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow:hidden;
+}
+
+.questiontextbox:focus, questiontextbox.input_text_focus
+{
+       border-color:#646464;
+       background-color:#ffffc0;
+}
+.quizdropdown
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-style:normal;
+    font-size:large;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.answerlabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-style:normal;
+    font-size:large;
+    height:20px;
+    width:100px;
+    font-weight:bold;
+   
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+}
+
+.answerremove
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-style:normal;
+    font-size:large;
+    height:25px;
+    width:25px;
+    font-weight:bold;
+      
+   
+    margin-left: 50px;
+    margin-right: 2px;
+   
+ 
+}
+.questionremove
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-style:normal;
+    font-size:large;
+    height:25px;
+    width:25px;
+    font-weight:bold;
+    
+   
+    
+    margin-left: 2px;
+    margin-right: 2px;
+  
+ 
+}
+
+.questionlabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 9px;
+    font-style:normal;
+    font-size:large;
+    height:125px;
+    width:500px;
+    
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/******************************/
+/**Styling information specific to individual content pages**/
+
+/* Accordion */
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #2E4d7B;
+	font-family: Arial, Sans-Serif;
+	font-size: 20px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeader a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeaderSelected a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeaderSelected a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.videoLink
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style:normal;
+    font-size:large;
+    height:20px;
+    width:100px;
+    font-weight:bold;
+   
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 20px;
+    margin-right: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+}
+.quizLink
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style:normal;
+    font-size:large;
+    height:20px;
+    width:100px;
+    font-weight:bold;
+   
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 20px;
+    margin-right: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+}
+
+.assignmentheaderlabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style:normal;
+    
+    height:20px;
+    width:100px;
+    font-weight:bold;
+   
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ 
+}
+
+
+
+
+.menuitem
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    background-color: #006600;
+    color:White !important;
+   
+    
+    
+}
+
+.menuitem a:hover
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    background-color:Gray;
+    
+}
+
+
+.submenuitem
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+   
+    font-size:20px;
+    color:White !important;
+    background: #006600;
+}
+
+.submenuitem  a:hover
+{
+    background-color:Gray;
+}
+
+.listheaderlabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style:normal;
+    font-weight:bold;
+  
+}
+.mainlistheaderlabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style:normal;
+    font-weight:bold;
+    margin: 0 auto;
+    
+ 
+}
+
+
+.listlabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style:normal;
+    font-weight:bold;
+     
+    
+ 
+}
+.firstlistlabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style:normal;
+    font-weight:bold; 
+    margin-left: 10px; 
+    
+ 
+}
+
+.feedbackdatelabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style:normal;
+    font-size:large;
+    height:20px;
+    width:100px;
+    font-weight:bold;
+   
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 110px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ 
+}
+
+.datelabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    
+    font-style:normal;
+    font-size:16px;
+    font-weight:bold;
+   
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 50px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ 
+}
+.optionlabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size:medium;
+    font-style:normal;
+    font-size:14px;
+    font-weight:bold;
+   
+    padding:4px;
+    border-spacing:2px;
+  
+}
+.accordionGroupLabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size:24px;
+    font-weight:bold;
+    font-style:normal;
+   
+    font-weight:bold;
+   
+    padding:4px;
+    border-spacing:2px;
+   
+ 
+}
+.itemLabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    
+      
+    font-weight:bold;
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 20px;
+    margin-right: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+}
+
+.questionpanel
+{
+    border-bottom-width:thin;
+    width:500;
+    height:500;
+}
+
+.takequestionlabel
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style:normal;
+    
+    font-weight:bold;
+    border-bottom-width:thin;
+    border-bottom-color:Black;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.takequestionletter
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style:normal;
+    font-weight:bold;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+}
+.answercheckbox
+{
+    font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style:normal;
+    
+    font-weight:bold;
+    padding:4px;
+    border-spacing:2px;
+    margin-left: 20px;
+    margin-right: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.accordion
+{
+    margin-left: 20px;
+}
+
+
+.center1
+{
+   text-align:center;
+    margin-left:auto;
+    margin-right:0;
+}
+
+.indent150
+{
+    margin-left: 150px;
+}
+.indent50
+{
+    margin-left: 50px;
+}
+.indent10
+{
+    margin-left: 20px;
+}
+.indent5
+{
+    margin-left: 5px;
+}
+.indent200
+{
+    margin-left: 200px;
+}
+.indent300
+{
+    margin-left: 300px;
+}
+
+.indent400
+{
+    margin-left: 420px;
+}
+.indent600
+{
+    margin-left: 600px;
+}
+
+.margin10
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.margin20
+{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.red
+{
+    background: red;
+}
+.green
+{
+    background: green;
+}
+
+.masterbody
+{
+    background-size:500px 1000px ;
+}

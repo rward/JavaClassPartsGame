@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+ 
+<body style="background-image: url('<%= imgPath %>')" class="masterbody" >
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                 Welcome to Ward-IV
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                
+            </div>
+            <div class="clear hideSkiplink">
+                
+                 <asp:SiteMapDataSource runat="server" ID="siteMapDataSource" 
+                     ShowStartingNode="false" SiteMapProvider="Student" />
+                    <asp:Menu runat="server" ID="MainMenu" Orientation="Horizontal" DataSourceID="siteMapDataSource"
+                        ForeColor="White" CssClass="menu" Width="100%" StaticDisplayLevels="1" 
+                     IncludeStyleBlock="False" >
+                       
+                            <LevelMenuItemStyles>
+                            <asp:MenuItemStyle CssClass="menuitem"/>
+                            <asp:MenuItemStyle CssClass="submenuitem"/>
+                            
+                            </LevelMenuItemStyles>            
+                            
+
+                    </asp:Menu>
+                 
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+ </body>
+
+</html>
