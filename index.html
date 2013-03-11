@@ -26,34 +26,77 @@
           <li><a href="https://github.com/rward/JavaClassPartsGame">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
+    <section>
+        <h3>Welcome to Robot Zero's Home Page.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Robot Zero is based on the AdvancedRobot Class the is part of the robocode framework:</p>
+<p>For more information on the robocode framework look <a href="http://robocode.sourceforge.net/">Here</a></p>
+<img alt="" src="https://raw.github.com/rward/robocode-raw-zero/gh-pages/images/BattlePic.png">
+<h3>About the robot</h3>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+robocode-raw-zero is a Robocode robot implementing the following basic strategy in one on one combat:<br>
+<div id="list1">
+   <ul>
+      <li>Keep moving</li>
+      <li>Try to stay perpendicular to the quadrant the enemy is in</li>
+      <li>Fire proportionally to distance from target</li>
+      <li>Fire ahead of enemy's direction of movement to distance from target</li>
+      <li>Lock Radar on to enemy </li>
+   </ul>
+</div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+robocode-raw-zero is a Robocode robot implementing the following basic strategy in melee combat:<br>
+<div id="list1">
+   <ul>
+      <li>Keep moving</li>
+      <li>Head to a corner stay there moving perpendicular to the center</li>
+      <li>Return to one on one combat once only one other robot remains</li>
+      <li>Fire full power with > 3 enemies (you will likely hit something)</li>
+      
+   </ul>
+</div>
 
-<h3>Designer Templates</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h1>Specifics</h1>
+<h3> Movement:</h3> 
+During one on one combat  
+Zero finds the enemy robot and determines what quadrant it is in <br>
+Quadrant <br>
+<ul>
+ <li>0 lower left </li>
+ <li>1 upper left </li>
+ <li>2 upper right </li>
+ <li>3 lower left </li>
+</ul>
+Based this it performs three basic movements: <br>
+<ul>
+<li>Runs a diagonal perpendicular to the quadrant </li>
+<li>Backs away from the quadrant while moving inward </li>
+<li>Forward toward the quadrant moving outward </li>
+</ul>
+If the enemy robot changes quadrants it updates its movement pattern.
+ 
+ 
+<h3> Targeting:</h3><br>
+Scans and targets a specific robot. Use a radar lock to keep track of this robot.
 
-<h3>Rather Drive Stick?</h3>
+<h3> Firing:</h3><br>
+Whenever it scans a robot, it will fire if that robot is in range. <br>
+Power level is inversely proportional to distance from target. <br>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h3> Vulnerabilities:</h3><br>
+ There are many opportunities for improvement of this robot. It does not attempt to avoid other robots and does nothing when colliding with another robot. It does not save any information about other robots between rounds in order to improve its strategy.
 
-<h3>Authors and Contributors</h3>
+<h3> About the project</h3><br>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+For more details on this project, see:<br><br>
+<font Size = 5>
+<a href="https://github.com/rward/robocode-raw-zero/wiki/User-Guide">User Guide</a></p> <br>
+<a href="https://github.com/rward/robocode-raw-zero/wiki/Developer-Guide">Developer Guide</a></p> <br>
+<a href="https://github.com/rward/robocode-raw-zero/wiki/Contact-Us">Contact Us</a></p> <br>
+ </font>
+</section>
     </div>
     <footer>
       <p>Project maintained by <a href="https://github.com/rward">rward</a></p>
